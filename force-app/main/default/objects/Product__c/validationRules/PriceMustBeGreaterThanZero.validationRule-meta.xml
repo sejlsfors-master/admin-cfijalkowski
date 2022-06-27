@@ -4,5 +4,6 @@
     <active>true</active>
     <description>Price must be greater than zero!</description>
     <errorConditionFormula>Price__c  &lt;= 0</errorConditionFormula>
+    <errorDisplayField>Price__c</errorDisplayField>
     <errorMessage>Price must be greater than zero!</errorMessage>
 </ValidationRule>
