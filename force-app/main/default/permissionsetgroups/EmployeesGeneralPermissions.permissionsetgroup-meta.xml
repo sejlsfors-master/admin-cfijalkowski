@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Gives employees general basic permissions, different than clients</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Employees General Permissions</label>
+    <permissionSets>CreateNewOrders</permissionSets>
+    <permissionSets>ProductEdition</permissionSets>
+    <permissionSets>VATRatesEdition</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>
