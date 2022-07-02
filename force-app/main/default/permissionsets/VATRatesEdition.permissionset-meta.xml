@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allow to See and modyfy a field DefaultVATRate on Product__c Object</description>
     <fieldPermissions>
         <editable>true</editable>
         <field>Product__c.DefaultVatRate__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
-    <label>Employee</label>
+    <label>VAT Rates Edition</label>
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
