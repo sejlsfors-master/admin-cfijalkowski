@@ -26,5 +26,6 @@
     <tabs>Product__c</tabs>
     <tabs>Category__c</tabs>
     <tabs>ProductCategory__c</tabs>
+    <tabs>Order__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

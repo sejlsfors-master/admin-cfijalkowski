@@ -22,17 +22,21 @@
     <tabs>Product__c</tabs>
     <tabs>Category__c</tabs>
     <tabs>ProductCategory__c</tabs>
+    <tabs>Order__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningSalesConsole_UtilityBar</utilityBar>
     <workspaceConfig>
         <mappings>
-            <tab>Product__c</tab>
+            <tab>Order__c</tab>
         </mappings>
         <mappings>
             <tab>Category__c</tab>
         </mappings>
         <mappings>
             <tab>ProductCategory__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Product__c</tab>
         </mappings>
         <mappings>
             <tab>standard-Account</tab>
