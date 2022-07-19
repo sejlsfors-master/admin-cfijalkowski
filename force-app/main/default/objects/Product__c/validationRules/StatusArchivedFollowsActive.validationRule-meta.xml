@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusArchivedFollowsActive</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISPICKVAL(PRIORVALUE(Status__c),&quot;Active&quot;)) &amp;&amp; ISPICKVAL(Status__c, &quot;Archived&quot;)</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>Status Archived can be set only after Active</errorMessage>
+</ValidationRule>
