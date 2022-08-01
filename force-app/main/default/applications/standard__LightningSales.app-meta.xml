@@ -24,5 +24,8 @@
     <tabs>standard-Case</tabs>
     <tabs>standard-Forecasting3</tabs>
     <tabs>Product__c</tabs>
+    <tabs>Category__c</tabs>
+    <tabs>ProductCategory__c</tabs>
+    <tabs>Order__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>
