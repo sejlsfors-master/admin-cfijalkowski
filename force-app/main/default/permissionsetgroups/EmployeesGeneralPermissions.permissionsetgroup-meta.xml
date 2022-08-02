@@ -4,7 +4,6 @@
     <hasActivationRequired>false</hasActivationRequired>
     <label>Employees General Permissions</label>
     <permissionSets>AssignOrderToCase</permissionSets>
-    <permissionSets>CategoriesManagement</permissionSets>
     <permissionSets>CreateNewOrders</permissionSets>
     <permissionSets>ProductEdition</permissionSets>
     <permissionSets>VATRatesEdition</permissionSets>
