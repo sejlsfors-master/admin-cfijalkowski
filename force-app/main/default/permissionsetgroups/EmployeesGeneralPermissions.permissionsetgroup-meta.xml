@@ -6,6 +6,7 @@
     <permissionSets>AssignOrderToCase</permissionSets>
     <permissionSets>CreateNewOrders</permissionSets>
     <permissionSets>ProductEdition</permissionSets>
+    <permissionSets>ShopOnlineAppAcces</permissionSets>
     <permissionSets>VATRatesEdition</permissionSets>
     <status>Updated</status>
 </PermissionSetGroup>
