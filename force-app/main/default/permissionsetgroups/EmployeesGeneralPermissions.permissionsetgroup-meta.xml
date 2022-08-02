@@ -3,8 +3,11 @@
     <description>Gives employees general basic permissions, different than clients</description>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Employees General Permissions</label>
+    <permissionSets>AssignOrderToCase</permissionSets>
     <permissionSets>CreateNewOrders</permissionSets>
     <permissionSets>ProductEdition</permissionSets>
+    <permissionSets>ShopOnlineAppAcces</permissionSets>
     <permissionSets>VATRatesEdition</permissionSets>
+    <permissionSets>CategoriesManagement</permissionSets>
     <status>Updated</status>
 </PermissionSetGroup>
