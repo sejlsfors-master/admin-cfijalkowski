@@ -5,6 +5,7 @@
     <label>Employees General Permissions</label>
     <permissionSets>AssignOrderToCase</permissionSets>
     <permissionSets>CreateNewOrders</permissionSets>
+    <permissionSets>EditBillingAccountFieldOnOrder</permissionSets>
     <permissionSets>ProductEdition</permissionSets>
     <permissionSets>ShopOnlineAppAcces</permissionSets>
     <permissionSets>VATRatesEdition</permissionSets>
