@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TotalGrossPrice__c</fullName>
     <externalId>false</externalId>
-    <formula>TotalNetPrice__c *(1+   VALUE(TEXT(VATRate__c))/100)</formula>
+    <formula>TotalNetPrice__c *(1+   VALUE(TEXT(VATRate__c)))</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Total Gross Price</label>
     <precision>18</precision>
