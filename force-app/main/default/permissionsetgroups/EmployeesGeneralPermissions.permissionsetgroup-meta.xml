@@ -4,10 +4,14 @@
     <hasActivationRequired>false</hasActivationRequired>
     <label>Employees General Permissions</label>
     <permissionSets>AssignOrderToCase</permissionSets>
+    <permissionSets>CategoriesManagement</permissionSets>
     <permissionSets>CreateNewOrders</permissionSets>
+    <permissionSets>EditBillingAccountFieldOnOrder</permissionSets>
+    <permissionSets>EditPaymentStatusOnOrder</permissionSets>
+    <permissionSets>EditShippingDataOnOrder</permissionSets>
+    <permissionSets>EditStatusFieldOnOrder</permissionSets>
     <permissionSets>ProductEdition</permissionSets>
     <permissionSets>ShopOnlineAppAcces</permissionSets>
     <permissionSets>VATRatesEdition</permissionSets>
-    <permissionSets>CategoriesManagement</permissionSets>
     <status>Updated</status>
 </PermissionSetGroup>
