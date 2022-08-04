@@ -8,6 +8,7 @@
     <permissionSets>CreateNewOrders</permissionSets>
     <permissionSets>EditBillingAccountFieldOnOrder</permissionSets>
     <permissionSets>EditBillingDataOnOrder</permissionSets>
+    <permissionSets>EditOrderLineItemFields</permissionSets>
     <permissionSets>EditPaymentStatusOnOrder</permissionSets>
     <permissionSets>EditShippingDataOnOrder</permissionSets>
     <permissionSets>EditStatusFieldOnOrder</permissionSets>
