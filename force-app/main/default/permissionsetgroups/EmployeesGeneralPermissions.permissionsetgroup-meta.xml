@@ -6,6 +6,7 @@
     <permissionSets>AssignOrderToCase</permissionSets>
     <permissionSets>CategoriesManagement</permissionSets>
     <permissionSets>CreateNewOrders</permissionSets>
+    <permissionSets>EditPaymentStatusOnOrder</permissionSets>
     <permissionSets>EditStatusFieldOnOrder</permissionSets>
     <permissionSets>ProductEdition</permissionSets>
     <permissionSets>ShopOnlineAppAcces</permissionSets>
