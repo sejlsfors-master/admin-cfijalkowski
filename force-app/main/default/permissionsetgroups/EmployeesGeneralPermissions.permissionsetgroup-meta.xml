@@ -6,8 +6,10 @@
     <permissionSets>AssignOrderToCase</permissionSets>
     <permissionSets>CategoriesManagement</permissionSets>
     <permissionSets>CreateNewOrders</permissionSets>
-    <permissionSets>EditShippingDataOnOrder</permissionSets>
+    <permissionSets>EditBillingAccountFieldOnOrder</permissionSets>
+    <permissionSets>EditBillingDataOnOrder</permissionSets>
     <permissionSets>EditPaymentStatusOnOrder</permissionSets>
+    <permissionSets>EditShippingDataOnOrder</permissionSets>
     <permissionSets>EditStatusFieldOnOrder</permissionSets>
     <permissionSets>ProductEdition</permissionSets>
     <permissionSets>ShopOnlineAppAcces</permissionSets>
