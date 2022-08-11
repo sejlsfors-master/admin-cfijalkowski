@@ -160,6 +160,6 @@
     </nameField>
     <pluralLabel>Products</pluralLabel>
     <searchLayouts></searchLayouts>
-    <sharingModel>Private</sharingModel>
+    <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
