@@ -10,7 +10,7 @@
                 <value>New</value>
             </criteriaItems>
             <notifyCcRecipients>true</notifyCcRecipients>
-            <senderEmail>sejlsfors.master+dev@gmail.com</senderEmail>
+            <senderEmail>sejlsfors.master+int@gmail.com</senderEmail>
             <senderName>SejlsforsMaster</senderName>
             <template>unfiled$public/AutoResponseToCase</template>
         </ruleEntry>
