@@ -12,7 +12,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>ProductCategory__c.TechnicalProductCategoryUniqueHelper__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>CartLineItem__c.EffectiveUnitPrice__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Product__c.Price__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
