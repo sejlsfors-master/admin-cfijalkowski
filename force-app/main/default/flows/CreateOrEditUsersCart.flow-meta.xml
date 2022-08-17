@@ -289,10 +289,10 @@ Draft Cart not exist -&gt; create new Cart</description>
             </value>
         </filters>
         <filters>
-            <field>Name</field>
+            <field>Product__c</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>CurrentCartLineItemName</elementReference>
+                <elementReference>CurrentProductId.Id</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
@@ -315,6 +315,13 @@ Draft Cart not exist -&gt; create new Cart</description>
             <operator>EqualTo</operator>
             <value>
                 <stringValue>Draft</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>OwnerId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
