@@ -5,7 +5,7 @@
         <name>AssignCartLineItem_0</name>
         <label>Assign Cart Line Item</label>
         <locationX>578</locationX>
-        <locationY>878</locationY>
+        <locationY>998</locationY>
         <assignmentItems>
             <assignToReference>CartLineItem.Name</assignToReference>
             <operator>Assign</operator>
@@ -17,7 +17,7 @@
             <assignToReference>CartLineItem.Cart__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>Cart.Id</elementReference>
+                <elementReference>CreatedDraftCart.Id</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -32,6 +32,13 @@
             <operator>Assign</operator>
             <value>
                 <elementReference>ProductsQuantity</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CartLineItem.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -71,6 +78,13 @@
                 <elementReference>ProductQuantity_CartExist</elementReference>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CartLineItem.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>CreateNewCartLineItem</targetReference>
         </connector>
@@ -94,6 +108,20 @@
                 <elementReference>DraftCartLineItems.Id</elementReference>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CartLineItem.Cart__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>DraftCarts.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CartLineItem.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>UpdateCartLineItem</targetReference>
         </connector>
@@ -104,7 +132,7 @@
         <locationX>578</locationX>
         <locationY>638</locationY>
         <assignmentItems>
-            <assignToReference>Cart.Account__c</assignToReference>
+            <assignToReference>Cart.Status__c</assignToReference>
             <operator>Assign</operator>
             <value>
                 <stringValue>Draft</stringValue>
@@ -114,7 +142,7 @@
             <assignToReference>Cart.Account__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>GetUsersAccount.Id</elementReference>
+                <elementReference>GetUsersContact.Account.Id</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -175,7 +203,7 @@ Draft Cart not exist -&gt; create new Cart</description>
             <name>ThereIs</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>DraftCartLineItems.Name</leftValueReference>
+                <leftValueReference>DraftCartLineItems.Id</leftValueReference>
                 <operator>IsNull</operator>
                 <rightValue>
                     <booleanValue>false</booleanValue>
@@ -244,7 +272,7 @@ Draft Cart not exist -&gt; create new Cart</description>
         <locationX>578</locationX>
         <locationY>758</locationY>
         <connector>
-            <targetReference>AssignCartLineItem_0</targetReference>
+            <targetReference>CreatedDraftCart</targetReference>
         </connector>
         <inputReference>Cart</inputReference>
     </recordCreates>
@@ -264,12 +292,42 @@ Draft Cart not exist -&gt; create new Cart</description>
         <name>CreateNewCartLineItem_0</name>
         <label>Create New CartLineItem</label>
         <locationX>578</locationX>
-        <locationY>998</locationY>
+        <locationY>1118</locationY>
         <connector>
             <targetReference>ProductAddedToNewCart</targetReference>
         </connector>
         <inputReference>CartLineItem</inputReference>
     </recordCreates>
+    <recordLookups>
+        <description>get just created user&apos;s Cart with &quot;Draft&quot; status</description>
+        <name>CreatedDraftCart</name>
+        <label>Created Draft Cart</label>
+        <locationX>578</locationX>
+        <locationY>878</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>AssignCartLineItem_0</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Draft</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>User__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Cart__c</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <recordLookups>
         <description>CartLineItems from current Draft Cart</description>
         <name>DraftCartLineItems</name>
@@ -282,17 +340,17 @@ Draft Cart not exist -&gt; create new Cart</description>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>Cart__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>DraftCarts.Id</elementReference>
-            </value>
-        </filters>
-        <filters>
             <field>Product__c</field>
             <operator>EqualTo</operator>
             <value>
                 <elementReference>CurrentProductId.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>OwnerId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
@@ -329,8 +387,8 @@ Draft Cart not exist -&gt; create new Cart</description>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
-        <name>GetUsersAccount</name>
-        <label>Get User&apos;s Account</label>
+        <name>GetUsersContact</name>
+        <label>Get User&apos;s Contact</label>
         <locationX>380</locationX>
         <locationY>158</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
@@ -339,14 +397,14 @@ Draft Cart not exist -&gt; create new Cart</description>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>OwnerId</field>
+            <field>Id</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>$User.Id</elementReference>
+                <elementReference>$User.ContactId</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>Account</object>
+        <object>Contact</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordUpdates>
@@ -443,7 +501,7 @@ Draft Cart not exist -&gt; create new Cart</description>
         <name>ProductAddedToNewCart</name>
         <label>Product added to your new Cart</label>
         <locationX>578</locationX>
-        <locationY>1118</locationY>
+        <locationY>1238</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -491,7 +549,7 @@ Draft Cart not exist -&gt; create new Cart</description>
         <locationX>254</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>GetUsersAccount</targetReference>
+            <targetReference>GetUsersContact</targetReference>
         </connector>
     </start>
     <status>Active</status>
