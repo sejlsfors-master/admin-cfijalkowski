@@ -34,13 +34,6 @@
                 <elementReference>ProductsQuantity</elementReference>
             </value>
         </assignmentItems>
-        <assignmentItems>
-            <assignToReference>CartLineItem.OwnerId</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>$User.Id</elementReference>
-            </value>
-        </assignmentItems>
         <connector>
             <targetReference>CreateNewCartLineItem_0</targetReference>
         </connector>
@@ -78,13 +71,6 @@
                 <elementReference>ProductQuantity_CartExist</elementReference>
             </value>
         </assignmentItems>
-        <assignmentItems>
-            <assignToReference>CartLineItem.OwnerId</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>$User.Id</elementReference>
-            </value>
-        </assignmentItems>
         <connector>
             <targetReference>CreateNewCartLineItem</targetReference>
         </connector>
@@ -93,7 +79,7 @@
         <name>AssignCartLineItem_0_0_0_0</name>
         <label>Assign Cart Line Item</label>
         <locationX>50</locationX>
-        <locationY>878</locationY>
+        <locationY>998</locationY>
         <assignmentItems>
             <assignToReference>CartLineItem.Quantity__c</assignToReference>
             <operator>Assign</operator>
@@ -113,13 +99,6 @@
             <operator>Assign</operator>
             <value>
                 <elementReference>DraftCarts.Id</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>CartLineItem.OwnerId</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>$User.Id</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -210,7 +189,7 @@ Draft Cart not exist -&gt; create new Cart</description>
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>AssignCartLineItem_0_0_0_0</targetReference>
+                <targetReference>DraftCartLineItem</targetReference>
             </connector>
             <label>There Is</label>
         </rules>
@@ -220,7 +199,7 @@ Draft Cart not exist -&gt; create new Cart</description>
         <description>Calculate Quantity when Product exists in the draft Cart</description>
         <name>CalculateQuantity</name>
         <dataType>Number</dataType>
-        <expression>{!DraftCartLineItems.Quantity__c}+{!ProductQuantity_CartExist}</expression>
+        <expression>{!DraftCartLineItem.Quantity__c}+{!ProductQuantity_CartExist}</expression>
         <scale>0</scale>
     </formulas>
     <formulas>
@@ -329,6 +308,37 @@ Draft Cart not exist -&gt; create new Cart</description>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
+        <description>CartLineItem from current Draft Cart</description>
+        <name>DraftCartLineItem</name>
+        <label>Draft CartLineItem</label>
+        <locationX>50</locationX>
+        <locationY>878</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>AssignCartLineItem_0_0_0_0</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Product__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CurrentProductId.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Cart__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>DraftCarts.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>CartLineItem__c</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Quantity__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
         <description>CartLineItems from current Draft Cart</description>
         <name>DraftCartLineItems</name>
         <label>Draft CartLineItems</label>
@@ -344,13 +354,6 @@ Draft Cart not exist -&gt; create new Cart</description>
             <operator>EqualTo</operator>
             <value>
                 <elementReference>CurrentProductId.Id</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>OwnerId</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>$User.Id</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
@@ -411,7 +414,7 @@ Draft Cart not exist -&gt; create new Cart</description>
         <name>UpdateCartLineItem</name>
         <label>Update CartLineItem</label>
         <locationX>50</locationX>
-        <locationY>998</locationY>
+        <locationY>1118</locationY>
         <connector>
             <targetReference>ProductAddedToNewCart_0_0</targetReference>
         </connector>
@@ -533,7 +536,7 @@ Draft Cart not exist -&gt; create new Cart</description>
         <name>ProductAddedToNewCart_0_0</name>
         <label>Product added to your new Cart</label>
         <locationX>50</locationX>
-        <locationY>1118</locationY>
+        <locationY>1238</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
