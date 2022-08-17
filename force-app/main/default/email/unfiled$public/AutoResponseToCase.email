@@ -1,0 +1,10 @@
+Dear Customer! </br>
+
+Your Case was registered in our system with internal number</br>
+<b>{!Case.CaseNumber}</b></br></br>
+
+Your case will be considered by {!Case.OwnerFullName}</br></br>
+
+Wait for our employee response. Check your SPAM folder if you won't notice any message in the next 2 working days.</br></br>
+
+Have a nice day!
