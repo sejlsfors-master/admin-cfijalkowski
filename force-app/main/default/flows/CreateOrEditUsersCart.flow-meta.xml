@@ -194,7 +194,7 @@ Draft Cart not exist -&gt; create new Cart</description>
             <label>There Is</label>
         </rules>
     </decisions>
-    <description>ScreenFlow to edit Cart and CartItems</description>
+    <description>ScreenFlow to create and/or edit Cart and CartItems</description>
     <formulas>
         <description>Calculate Quantity when Product exists in the draft Cart</description>
         <name>CalculateQuantity</name>
@@ -379,7 +379,7 @@ Draft Cart not exist -&gt; create new Cart</description>
             </value>
         </filters>
         <filters>
-            <field>OwnerId</field>
+            <field>User__c</field>
             <operator>EqualTo</operator>
             <value>
                 <elementReference>$User.Id</elementReference>
