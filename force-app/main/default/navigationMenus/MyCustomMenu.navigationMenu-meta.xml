@@ -11,4 +11,19 @@
         <target>Product__c</target>
         <type>SalesforceObject</type>
     </navigationMenuItem>
+    <navigationMenuItem>
+        <defaultListViewId>MyCases</defaultListViewId>
+        <label>Cases</label>
+        <position>2</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>Case</target>
+        <type>SalesforceObject</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Cart</label>
+        <position>3</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/flow/DraftCartScreenFlow</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
 </NavigationMenu>
