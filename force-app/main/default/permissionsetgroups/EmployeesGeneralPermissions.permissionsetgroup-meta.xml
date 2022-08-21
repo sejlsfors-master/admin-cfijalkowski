@@ -3,9 +3,9 @@
     <description>Gives employees general basic permissions, different than clients</description>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Employees General Permissions</label>
+    <permissionSets>AccountsReadWrite</permissionSets>
     <permissionSets>AssignOrderToCase</permissionSets>
     <permissionSets>CategoriesManagement</permissionSets>
-    <permissionSets>CreateNewOrders</permissionSets>
     <permissionSets>EditBillingAccountFieldOnOrder</permissionSets>
     <permissionSets>EditBillingDataOnOrder</permissionSets>
     <permissionSets>EditOrderLineItemFields</permissionSets>
@@ -14,6 +14,7 @@
     <permissionSets>EditStatusFieldOnOrder</permissionSets>
     <permissionSets>ProductEdition</permissionSets>
     <permissionSets>ShopOnlineAppAcces</permissionSets>
+    <permissionSets>ShopOnlineCustomerPermissions</permissionSets>
     <permissionSets>VATRatesEdition</permissionSets>
     <permissionSets>ViewAndEditCartsAndCartItems</permissionSets>
     <status>Updated</status>
