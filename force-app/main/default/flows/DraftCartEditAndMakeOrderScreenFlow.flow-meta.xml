@@ -1416,7 +1416,7 @@
             <targetReference>DraftCarts</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <name>ChangedTableRows</name>
         <dataType>SObject</dataType>
