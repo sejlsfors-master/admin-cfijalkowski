@@ -26,7 +26,7 @@
         <inputParameters>
             <name>senderAddress</name>
             <value>
-                <elementReference>$Record.Owner:User.Email</elementReference>
+                <elementReference>$Record.Cart__r.Owner:User.Email</elementReference>
             </value>
         </inputParameters>
         <inputParameters>
