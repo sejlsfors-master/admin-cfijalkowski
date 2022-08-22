@@ -34,6 +34,13 @@
                 <elementReference>ProductsQuantity</elementReference>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CartLineItem.Discount__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>GeneralCartDiscount</elementReference>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>CreateNewCartLineItem_0</targetReference>
         </connector>
@@ -71,6 +78,13 @@
                 <elementReference>ProductQuantity_CartExist</elementReference>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CartLineItem.Discount__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>GeneralCartDiscount</elementReference>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>CreateNewCartLineItem</targetReference>
         </connector>
@@ -99,6 +113,13 @@
             <operator>Assign</operator>
             <value>
                 <elementReference>DraftCarts.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CartLineItem.Discount__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>GeneralCartDiscount</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -142,6 +163,13 @@
             <targetReference>CreateNewCart</targetReference>
         </connector>
     </assignments>
+    <constants>
+        <name>GeneralCartDiscount</name>
+        <dataType>Number</dataType>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </constants>
     <decisions>
         <description>Draft Cart Exists -&gt; edit Cart
 Draft Cart not exist -&gt; create new Cart</description>
