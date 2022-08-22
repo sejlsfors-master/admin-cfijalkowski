@@ -155,8 +155,9 @@
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <label>Order</label>
     <nameField>
+        <displayFormat>OR-{0000}</displayFormat>
         <label>Order Name</label>
-        <type>Text</type>
+        <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Orders</pluralLabel>
     <searchLayouts></searchLayouts>
