@@ -1,0 +1,47 @@
+{
+  "appPageId" : "b5e07e43-902b-49bf-95e4-28adb594aa98",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "d3c7c360-2f9e-4022-88a8-b4709a89d684",
+  "label" : "Thanks for your request",
+  "regions" : [ {
+    "id" : "2da40894-09d9-411c-ad8e-5ff8023484b9",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\"><span style=\"font-size: 36px; font-family: verdana;\">Thanks for your request!</span></p><p style=\"text-align: center;\"><a href=\"https://sejlsfors2-dev-ed.my.site.com/\" rel=\"noopener noreferrer\" target=\"_self\" style=\"font-size: 20px;\">Back to home site</a></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "92b2439e-b621-4234-abdc-938c39a33dbe",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ec502930-3609-4bd3-bc22-d7fb2dd35a95",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "6f9620fe-fa05-450f-8bee-5d5ce11e2003",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Thanks for your request"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "d99115e0-9815-4f7c-a716-543f4721d8f1",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f86301e0-2b14-43bc-b6f1-01c792cbb040",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-thanks-case-request"
+}

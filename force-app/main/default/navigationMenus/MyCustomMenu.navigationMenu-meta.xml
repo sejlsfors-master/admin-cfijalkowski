@@ -11,4 +11,12 @@
         <target>Product__c</target>
         <type>SalesforceObject</type>
     </navigationMenuItem>
+    <navigationMenuItem>
+        <defaultListViewId>MyCases</defaultListViewId>
+        <label>Cases</label>
+        <position>2</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>Case</target>
+        <type>SalesforceObject</type>
+    </navigationMenuItem>
 </NavigationMenu>
