@@ -1,0 +1,126 @@
+{
+  "appPageId" : "b5e07e43-902b-49bf-95e4-28adb594aa98",
+  "componentName" : "siteforce:sldsTwoCol66Layout",
+  "id" : "93d3b3d8-c0dd-4225-8d40-ecbc7406fd82",
+  "label" : "Home",
+  "regions" : [ {
+    "id" : "75376835-174a-4231-9f5f-a0db85edc002",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "buttonAlignment" : "center",
+        "buttonBgColor" : "",
+        "buttonBgHoverColor" : "",
+        "buttonBorderColor" : "",
+        "buttonMaxWidth" : 100,
+        "buttonRadius" : 0,
+        "buttonTextColor" : "",
+        "buttonTextHoverColor" : "",
+        "confirmationMessage" : "Got it!",
+        "followUpPromptLabel" : "Can we close your question?",
+        "isAskFollowPromptEnabled" : true,
+        "isIncludeArticlesEnabled" : false,
+        "isIncludeDiscussionsEnabled" : true,
+        "isInitialSatisfactionPromptEnabled" : true,
+        "isPublisherDeflectionEnabled" : true,
+        "label" : "Ask a Question",
+        "maxSuggestions" : 5,
+        "satisfactionPromptLabel" : "Did we help to answer your question?",
+        "showDetails" : false,
+        "showTopics" : true,
+        "uneditableTopics" : false
+      },
+      "componentName" : "forceCommunity:askCommunity",
+      "id" : "86d314a7-ab41-4ccf-8edc-00c91d2947cf",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7fc48f10-1306-4cef-a95c-37818e6bc9a2",
+    "regionName" : "featured",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+      "richTextValue" : "<!--  ----------------------------------------------------------------------  -->\n<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->\n<!--  If necessary, please modify the charset parameter to specify the        -->\n<!--  character set of your HTML page.                                        -->\n<!--  ----------------------------------------------------------------------  -->\n\n<!--<META HTTP-EQUIV=\"Content-type\" CONTENT=\"text/html; charset=UTF-8\">\t\t  -->\n\n<!--  ----------------------------------------------------------------------  -->\n<!--  NOTE: Please add the following <FORM> element to your page.             -->\n<!--  ----------------------------------------------------------------------  -->\n\n<form action=\"https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8\" method=\"POST\">\n\n<input type=hidden name=\"orgid\" value=\"00D7Q000008L7wS\">\n<input type=hidden name=\"retURL\" value=\"http://sejlsfors2-dev-ed.my.site.com/s/thanks-case-request\">\n\n<!--  ----------------------------------------------------------------------  -->\n<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->\n<!--  these lines if you wish to test in debug mode.                          -->\n<!--  <input type=\"hidden\" name=\"debug\" value=1>                              -->\n<!--  <input type=\"hidden\" name=\"debugEmail\"                                  -->\n<!--  value=\"sejlsfors.master+dev@gmail.com\">                                 -->\n<!--  ----------------------------------------------------------------------  -->\n\n<label for=\"name\">Contact Name</label><input  id=\"name\" maxlength=\"80\" name=\"name\" size=\"20\" type=\"text\" /><br>\n\n<label for=\"email\">Email</label><input  id=\"email\" maxlength=\"80\" name=\"email\" size=\"20\" type=\"text\" /><br>\n\n<label for=\"phone\">Phone</label><input  id=\"phone\" maxlength=\"40\" name=\"phone\" size=\"20\" type=\"text\" /><br>\n\n<label for=\"subject\">Subject</label><input  id=\"subject\" maxlength=\"80\" name=\"subject\" size=\"20\" type=\"text\" /><br>\n\n<label for=\"reason\">Case Reason</label><select  id=\"reason\" name=\"reason\"><option value=\"\">--None--</option><option value=\"Installation\">Installation</option>\n<option value=\"Equipment Complexity\">Equipment Complexity</option>\n<option value=\"Performance\">Performance</option>\n<option value=\"Breakdown\">Breakdown</option>\n<option value=\"Equipment Design\">Equipment Design</option>\n<option value=\"Feedback\">Feedback</option>\n<option value=\"Other\">Other</option>\n</select><br>\n\n<label for=\"description\">Description</label><textarea name=\"description\"></textarea><br>\n\n<input type=\"hidden\"  id=\"external\" name=\"external\" value=\"1\" /><br>\n\n<input type=\"submit\" name=\"submit\">\n\n</form>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "7a3bd287-0f05-4814-9810-067054ccf8fd",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "8e54ba12-1270-41a7-a8ac-6bef074dbe6b",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "display" : "LEVELS_POINTS",
+        "excludeInternalUsers" : false,
+        "knowledgeLabel" : "Knows about",
+        "numberOfUsers" : 5,
+        "showContextUser" : false,
+        "showTooltip" : false,
+        "showUserRank" : false,
+        "title" : "Leaderboard",
+        "tooltipText" : "Earn points and climb to new levels when you contribute in the experience!"
+      },
+      "componentName" : "forceCommunity:reputationLeaderboard42",
+      "id" : "a59b9997-87b9-47ab-952d-9bbaaa73e6ab",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {        "attachFiles" : false,
+        "authenticatedActionName" : "NewCase",
+        "confirmationMessageDescription" : "You'll hear back from us soon.",
+        "confirmationMessageTitle" : "Your request was submitted successfully.",
+        "deflectionCategoryGroupName" : "{!DataCategoryGroupName}",
+        "deflectionNotHelpful" : "Didn't find what you're looking for?",
+        "deflectionNumberOfArticles" : 6,
+        "deflectionParentCategory" : "{!TopLevelCategory}",
+        "deflectionSubHeader" : "Check out these articles...",
+        "deflectionTitle" : "Need Answers Fast?",
+        "hasDeflection" : false,
+        "headerTitle" : "Create a Case",
+        "isReCaptchaEnabled" : false,
+        "reCaptchaPrivateKey" : "",
+        "reCaptchaPublicKey" : "",
+        "unauthenticatedActionName" : "New"
+      },
+      "componentName" : "selfService:caseCreate",
+      "id" : "fe4b1280-815c-4178-ad5a-670c5ee9ef7c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6f48b55c-ecb7-4082-ad5f-f4742a8969ba",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "a0dc9f59-f5e7-4d3c-9427-fa6e268fad42",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "fc382b91-ee4a-4ab7-b266-69c6d9e30b08",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9f855e44-ee47-4eec-be6e-0b932ed8e53f",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}
