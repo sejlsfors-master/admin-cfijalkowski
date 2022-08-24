@@ -8,36 +8,6 @@
     "regionName" : "header",
     "type" : "region"
   }, {
-    "components" : [ {
-      "componentAttributes" : {
-        "buttonAlignment" : "center",
-        "buttonBgColor" : "",
-        "buttonBgHoverColor" : "",
-        "buttonBorderColor" : "",
-        "buttonMaxWidth" : 100,
-        "buttonRadius" : 0,
-        "buttonTextColor" : "",
-        "buttonTextHoverColor" : "",
-        "confirmationMessage" : "Got it!",
-        "followUpPromptLabel" : "Can we close your question?",
-        "isAskFollowPromptEnabled" : true,
-        "isIncludeArticlesEnabled" : false,
-        "isIncludeDiscussionsEnabled" : true,
-        "isInitialSatisfactionPromptEnabled" : true,
-        "isPublisherDeflectionEnabled" : true,
-        "label" : "Ask a Question",
-        "maxSuggestions" : 5,
-        "satisfactionPromptLabel" : "Did we help to answer your question?",
-        "showDetails" : false,
-        "showTopics" : true,
-        "uneditableTopics" : false
-      },
-      "componentName" : "forceCommunity:askCommunity",
-      "id" : "86d314a7-ab41-4ccf-8edc-00c91d2947cf",
-      "renderPriority" : "NEUTRAL",
-      "renditionMap" : { },
-      "type" : "component"
-    } ],
     "id" : "7fc48f10-1306-4cef-a95c-37818e6bc9a2",
     "regionName" : "featured",
     "type" : "region"
@@ -74,7 +44,8 @@
       "renditionMap" : { },
       "type" : "component"
     }, {
-      "componentAttributes" : {        "attachFiles" : false,
+      "componentAttributes" : {
+        "attachFiles" : false,
         "authenticatedActionName" : "NewCase",
         "confirmationMessageDescription" : "You'll hear back from us soon.",
         "confirmationMessageTitle" : "Your request was submitted successfully.",
