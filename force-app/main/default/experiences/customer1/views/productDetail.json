@@ -58,6 +58,18 @@
     "regionName" : "sfdcHiddenRegion",
     "type" : "region"
   }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "flowArguments" : "[{\"label\":\"CurrentProductId\",\"dataType\":\"SObject\",\"supportsRecordId\":true,\"value\":\"{!Record.Id}\"}]",
+        "flowLayout" : "oneColumn",
+        "flowName" : "CreateOrEditUsersCart"
+      },
+      "componentName" : "forceCommunity:flowCommunity",
+      "id" : "32a14871-5793-4828-8951-e66306e39530",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
     "id" : "64aa8f3e-d1ba-4254-9400-c43dfbde6cec",
     "regionName" : "featured",
     "type" : "region"
