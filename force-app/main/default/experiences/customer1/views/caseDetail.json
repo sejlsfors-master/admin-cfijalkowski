@@ -23,7 +23,7 @@
         "discussionsTabLabel" : "Feed",
         "recordId" : "{!recordId}",
         "relatedTabLabel" : "Related",
-        "tab1Type" : "details",
+        "tab1Type" : "timeline",
         "tab2Type" : "related",
         "tab3Type" : "chatter",
         "tab4Type" : "none",

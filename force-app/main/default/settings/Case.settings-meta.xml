@@ -12,14 +12,14 @@
     <caseMergeInLightning>false</caseMergeInLightning>
     <closeCaseThroughStatusChange>false</closeCaseThroughStatusChange>
     <defaultCaseFeedLayoutOn>true</defaultCaseFeedLayoutOn>
-    <defaultCaseOwner>sejlsfors.master+int@gmail.com</defaultCaseOwner>
+    <defaultCaseOwner>sejlsfors.master+dev@gmail.com</defaultCaseOwner>
     <defaultCaseOwnerType>User</defaultCaseOwnerType>
-    <defaultCaseUser>sejlsfors.master+int@gmail.com</defaultCaseUser>
+    <defaultCaseUser>sejlsfors.master+dev@gmail.com</defaultCaseUser>
     <emailToCase>
         <enableE2CAttachmentAsFile>false</enableE2CAttachmentAsFile>
         <enableE2CSourceTracking>true</enableE2CSourceTracking>
         <enableEmailToCase>true</enableEmailToCase>
-        <enableHtmlEmail>false</enableHtmlEmail>
+        <enableHtmlEmail>true</enableHtmlEmail>
         <enableOnDemandEmailToCase>true</enableOnDemandEmailToCase>
         <enableThreadIDInBody>true</enableThreadIDInBody>
         <enableThreadIDInSubject>true</enableThreadIDInSubject>
@@ -34,7 +34,7 @@
             <casePriority>Medium</casePriority>
             <createTask>false</createTask>
             <emailAddress>sejlsfors.master+emailtocase@gmail.com</emailAddress>
-            <emailServicesAddress>sejlsfors.master+emailtocase@6-27ob11nfqh70x2yd67729ibdtvb6u7musw9o54s3c9px074g9n.7q-8l7uquac.eu44.case.salesforce.com</emailServicesAddress>
+            <emailServicesAddress>sejlsfors.master+emailtocase@10yerb9rnp0hnry95kzd4wh6v3qq0ubm1l0zln74z1jrm7mov7.7q-8l7wsuas.eu44.case.salesforce.com</emailServicesAddress>
             <isVerified>true</isVerified>
             <routingName>EmailToCase</routingName>
             <saveEmailHeaders>true</saveEmailHeaders>
@@ -68,7 +68,7 @@
     <visibleInCssCheckbox>false</visibleInCssCheckbox>
     <webToCase>
         <caseOrigin>Web</caseOrigin>
-        <defaultResponseTemplate>unfiled$public/SupportCaseCreatedWebInquiries</defaultResponseTemplate>
+        <defaultResponseTemplate>unfiled$public/AutoResponseToCase</defaultResponseTemplate>
         <enableWebToCase>true</enableWebToCase>
     </webToCase>
 </CaseSettings>
