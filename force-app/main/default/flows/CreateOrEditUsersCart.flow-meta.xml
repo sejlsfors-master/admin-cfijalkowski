@@ -2,6 +2,50 @@
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>55.0</apiVersion>
     <assignments>
+        <name>AssignCartLineItem</name>
+        <label>Assign Cart Line Item</label>
+        <locationX>314</locationX>
+        <locationY>878</locationY>
+        <assignmentItems>
+            <assignToReference>CartLineItem.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>CurrentCartLineItemName</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CartLineItem.Cart__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>DraftCarts.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CartLineItem.Product__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>CurrentProductId.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CartLineItem.Quantity__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ProductQuantity_CartExist</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CartLineItem.Discount__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>GeneralCartDiscount</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>CreateNewCartLineItem</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
         <name>AssignCartLineItem_0</name>
         <label>Assign Cart Line Item</label>
         <locationX>578</locationX>
@@ -43,50 +87,6 @@
         </assignmentItems>
         <connector>
             <targetReference>CreateNewCartLineItem_0</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>AssignCartLineItem_0_0_0</name>
-        <label>Assign Cart Line Item</label>
-        <locationX>314</locationX>
-        <locationY>878</locationY>
-        <assignmentItems>
-            <assignToReference>CartLineItem.Name</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>CurrentCartLineItemName</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>CartLineItem.Cart__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>DraftCarts.Id</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>CartLineItem.Product__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>CurrentProductId.Id</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>CartLineItem.Quantity__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>ProductQuantity_CartExist</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>CartLineItem.Discount__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>GeneralCartDiscount</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>CreateNewCartLineItem</targetReference>
         </connector>
     </assignments>
     <assignments>
@@ -203,7 +203,7 @@ Draft Cart not exist -&gt; create new Cart</description>
         <locationX>182</locationX>
         <locationY>758</locationY>
         <defaultConnector>
-            <targetReference>AssignCartLineItem_0_0_0</targetReference>
+            <targetReference>AssignCartLineItem</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>ThereIsNot</defaultConnectorLabel>
         <rules>
@@ -382,6 +382,13 @@ Draft Cart not exist -&gt; create new Cart</description>
             <operator>EqualTo</operator>
             <value>
                 <elementReference>CurrentProductId.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Cart__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>DraftCarts.Id</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
