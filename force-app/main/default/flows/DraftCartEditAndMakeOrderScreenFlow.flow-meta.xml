@@ -472,6 +472,7 @@
             <label>Update</label>
         </rules>
     </decisions>
+    <description>ScreenFlow used on Experience site that allows to edit users DraftCarts and convert it to Orders</description>
     <formulas>
         <name>TotalGrossPrice</name>
         <dataType>Currency</dataType>
@@ -593,6 +594,13 @@
             <operator>EqualTo</operator>
             <value>
                 <stringValue>Draft</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>User__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
