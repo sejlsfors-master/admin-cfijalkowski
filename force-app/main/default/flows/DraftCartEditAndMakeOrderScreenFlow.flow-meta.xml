@@ -300,22 +300,6 @@
             <targetReference>AssignCartLineItemToOrderLineItems</targetReference>
         </connector>
     </assignments>
-    <assignments>
-        <name>StatusOnConvertedDraftCart</name>
-        <label>Status On Converted Draft Cart</label>
-        <locationX>578</locationX>
-        <locationY>2630</locationY>
-        <assignmentItems>
-            <assignToReference>DraftCarts.Status__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <stringValue>Converted</stringValue>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>UpdateConvertedCart</targetReference>
-        </connector>
-    </assignments>
     <decisions>
         <name>AreLineItemsInCart</name>
         <label>Are There LineItems In Cart?</label>
@@ -488,7 +472,6 @@
             <label>Update</label>
         </rules>
     </decisions>
-    <description>ScreenFlow used on Experience site that allows to edit users DraftCarts and convert it to Orders</description>
     <formulas>
         <name>TotalGrossPrice</name>
         <dataType>Currency</dataType>
@@ -560,7 +543,7 @@
         <locationX>578</locationX>
         <locationY>2510</locationY>
         <connector>
-            <targetReference>StatusOnConvertedDraftCart</targetReference>
+            <targetReference>OrderedSuccessfully</targetReference>
         </connector>
         <inputReference>OrderLineItemsData</inputReference>
     </recordCreates>
@@ -610,13 +593,6 @@
             <operator>EqualTo</operator>
             <value>
                 <stringValue>Draft</stringValue>
-            </value>
-        </filters>
-        <filters>
-            <field>User__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>$User.Id</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
@@ -688,16 +664,6 @@
         <object>Contact</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
-    <recordUpdates>
-        <name>UpdateConvertedCart</name>
-        <label>Update Converted Cart</label>
-        <locationX>578</locationX>
-        <locationY>2750</locationY>
-        <connector>
-            <targetReference>OrderedSuccessfully</targetReference>
-        </connector>
-        <inputReference>DraftCarts</inputReference>
-    </recordUpdates>
     <recordUpdates>
         <name>UpdateTableRows_0</name>
         <label>Update Table Rows</label>
@@ -882,7 +848,7 @@
         <name>OrderedSuccessfully</name>
         <label>Ordered Successfully</label>
         <locationX>578</locationX>
-        <locationY>2870</locationY>
+        <locationY>2630</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
