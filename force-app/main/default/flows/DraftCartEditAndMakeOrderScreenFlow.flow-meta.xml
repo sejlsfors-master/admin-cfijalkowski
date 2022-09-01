@@ -300,6 +300,22 @@
             <targetReference>AssignCartLineItemToOrderLineItems</targetReference>
         </connector>
     </assignments>
+    <assignments>
+        <name>StatusOnConvertedDraftCart</name>
+        <label>Status On Converted Draft Cart</label>
+        <locationX>578</locationX>
+        <locationY>2630</locationY>
+        <assignmentItems>
+            <assignToReference>DraftCarts.Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Converted</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>UpdateConvertedCart</targetReference>
+        </connector>
+    </assignments>
     <decisions>
         <name>AreLineItemsInCart</name>
         <label>Are There LineItems In Cart?</label>
@@ -673,6 +689,16 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordUpdates>
+        <name>UpdateConvertedCart</name>
+        <label>Update Converted Cart</label>
+        <locationX>578</locationX>
+        <locationY>2750</locationY>
+        <connector>
+            <targetReference>OrderedSuccessfully</targetReference>
+        </connector>
+        <inputReference>DraftCarts</inputReference>
+    </recordUpdates>
+    <recordUpdates>
         <name>UpdateTableRows_0</name>
         <label>Update Table Rows</label>
         <locationX>138</locationX>
@@ -856,7 +882,7 @@
         <name>OrderedSuccessfully</name>
         <label>Ordered Successfully</label>
         <locationX>578</locationX>
-        <locationY>2630</locationY>
+        <locationY>2870</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
