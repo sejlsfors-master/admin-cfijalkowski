@@ -23,7 +23,7 @@
         <label>Cart</label>
         <position>3</position>
         <publiclyAvailable>false</publiclyAvailable>
-        <target>/flow/DraftCartScreenFlow</target>
+        <target>/flow/DraftCartEditAndMakeOrderScreenFlow</target>
         <type>InternalLink</type>
     </navigationMenuItem>
 </NavigationMenu>
