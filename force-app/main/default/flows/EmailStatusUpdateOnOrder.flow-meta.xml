@@ -26,7 +26,7 @@
         <inputParameters>
             <name>senderAddress</name>
             <value>
-                <elementReference>$Record.Owner:User.Email</elementReference>
+                <elementReference>$Record.Owner:User__NotFound.Email</elementReference>
             </value>
         </inputParameters>
         <inputParameters>

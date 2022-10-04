@@ -560,7 +560,7 @@
         <locationX>578</locationX>
         <locationY>2510</locationY>
         <connector>
-            <targetReference>OrderedSuccessfully</targetReference>
+            <targetReference>StatusOnConvertedDraftCart</targetReference>
         </connector>
         <inputReference>OrderLineItemsData</inputReference>
     </recordCreates>

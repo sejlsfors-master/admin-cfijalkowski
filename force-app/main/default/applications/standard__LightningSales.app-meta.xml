@@ -5,6 +5,7 @@
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>Sales</label>
     <navType>Standard</navType>
     <tabs>standard-home</tabs>
@@ -27,5 +28,6 @@
     <tabs>Category__c</tabs>
     <tabs>ProductCategory__c</tabs>
     <tabs>Order__c</tabs>
+    <tabs>OrderLineItem__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>
