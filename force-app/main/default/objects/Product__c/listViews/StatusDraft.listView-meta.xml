@@ -7,6 +7,7 @@
     <columns>OWNER.LAST_NAME</columns>
     <columns>Price__c</columns>
     <columns>CREATED_DATE</columns>
+    <columns>Status__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
         <field>Status__c</field>

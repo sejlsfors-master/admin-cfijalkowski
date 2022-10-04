@@ -88,4 +88,12 @@
         <name>standard__LightningBolt</name>
         <type>CustomApplication</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>partner</name>
+        <type>Network</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>customer</name>
+        <type>Network</type>
+    </appMenuItems>
 </AppMenu>

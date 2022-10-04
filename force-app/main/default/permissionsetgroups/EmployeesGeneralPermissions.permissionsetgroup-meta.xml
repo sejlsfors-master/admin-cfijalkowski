@@ -3,6 +3,7 @@
     <description>Gives employees general basic permissions, different than clients</description>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Employees General Permissions</label>
+    <permissionSets>AccountsReadWrite</permissionSets>
     <permissionSets>AssignOrderToCase</permissionSets>
     <permissionSets>CategoriesManagement</permissionSets>
     <permissionSets>EditBillingAccountFieldOnOrder</permissionSets>
@@ -13,7 +14,11 @@
     <permissionSets>EditStatusFieldOnOrder</permissionSets>
     <permissionSets>ProductEdition</permissionSets>
     <permissionSets>ShopOnlineAppAcces</permissionSets>
+<<<<<<< HEAD
     <permissionSets>ShopOnlineCustomerpermissions</permissionSets>
+=======
+    <permissionSets>ShopOnlineCustomerPermissions</permissionSets>
+>>>>>>> pomocniczy-branch
     <permissionSets>VATRatesEdition</permissionSets>
     <permissionSets>ViewAndEditCartsAndCartItems</permissionSets>
     <status>Updated</status>
