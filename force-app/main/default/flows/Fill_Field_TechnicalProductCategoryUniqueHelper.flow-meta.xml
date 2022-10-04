@@ -18,7 +18,7 @@
     <formulas>
         <name>SumOfId</name>
         <dataType>String</dataType>
-        <expression>{!$Record.Product__r.Id}+ {!$Record.Category__r.Id}</expression>
+        <expression>{!$Record.Product__c}+ {!$Record.Category__c}</expression>
     </formulas>
     <interviewLabel>Fill Field TechnicalProductCategoryUniqueHelper {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Fill Field TechnicalProductCategoryUniqueHelper</label>

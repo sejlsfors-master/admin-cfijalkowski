@@ -39,13 +39,6 @@
                 <behavior>Edit</behavior>
                 <field>AnnualRevenue</field>
             </layoutItems>
-<<<<<<< HEAD
-=======
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>AccountVatNumber__c</field>
-            </layoutItems>
->>>>>>> pomocniczy-branch
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

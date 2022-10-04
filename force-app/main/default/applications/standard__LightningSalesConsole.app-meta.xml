@@ -24,15 +24,11 @@
     <tabs>Category__c</tabs>
     <tabs>ProductCategory__c</tabs>
     <tabs>Order__c</tabs>
-    <tabs>OrderLineItem__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningSalesConsole_UtilityBar</utilityBar>
     <workspaceConfig>
         <mappings>
             <tab>Category__c</tab>
-        </mappings>
-        <mappings>
-            <tab>OrderLineItem__c</tab>
         </mappings>
         <mappings>
             <tab>Order__c</tab>

@@ -123,8 +123,8 @@
         }, {
           "components" : [ {
             "componentAttributes" : {
-              "navAlignment" : "distributed",
-              "navItemThreshold" : 4,
+              "navAlignment" : "center",
+              "navItemThreshold" : 6,
               "navigationMenuEditorRefresh" : "MyCustomMenu"
             },
             "componentName" : "forceCommunity:themeNav",

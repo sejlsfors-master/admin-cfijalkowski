@@ -5,7 +5,7 @@
   "id" : "0fa5c80f-3f1e-43c0-9a88-31a22f1218b1",
   "label" : "Product List",
   "objectApiName" : "Product__c",
-  "routeType" : "list-a00",
+  "routeType" : "list-a04",
   "type" : "route",
   "urlPrefix" : "product"
 }

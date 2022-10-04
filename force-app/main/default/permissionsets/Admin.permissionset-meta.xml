@@ -2,8 +2,6 @@
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <fieldPermissions>
         <editable>true</editable>
-<<<<<<< HEAD
-=======
         <field>Account.AccountNumber</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -184,7 +182,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
->>>>>>> pomocniczy-branch
         <field>CartLineItem__c.Discount__c</field>
         <readable>true</readable>
     </fieldPermissions>
