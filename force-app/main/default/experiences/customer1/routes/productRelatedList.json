@@ -5,7 +5,7 @@
   "id" : "895e51f2-e1af-47bc-8c21-c3ac1a36d0e9",
   "label" : "Product Related List",
   "objectApiName" : "Product__c",
-  "routeType" : "relatedlist-a04",
+  "routeType" : "relatedlist-a00",
   "type" : "route",
   "urlPrefix" : "product"
 }
