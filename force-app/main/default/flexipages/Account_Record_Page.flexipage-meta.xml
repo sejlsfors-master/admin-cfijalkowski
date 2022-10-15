@@ -226,18 +226,19 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
+                    <value>Oders Count</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>reportFilter</name>
-                    <value>FK_ACC_ID</value>
+                    <value>Account.Id</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>reportName</name>
-                    <value>New_Orders_with_Billing_Account_Report_oUK</value>
+                    <value>Orders_with_Accounts_Report_Hp4</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>showRefreshButton</name>
-                    <value>true</value>
+                    <value>false</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:reportChart</componentName>
                 <identifier>flexipage_reportChart</identifier>
