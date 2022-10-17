@@ -1,34 +1,28 @@
 {
   "appPageId" : "b5e07e43-902b-49bf-95e4-28adb594aa98",
   "componentName" : "siteforce:sldsOneColLayout",
-  "id" : "7405d645-e962-46f4-b341-b89522f4ca49",
-  "label" : "Thanks for your request!",
+  "id" : "d3c7c360-2f9e-4022-88a8-b4709a89d684",
+  "label" : "Thanks for your request",
   "regions" : [ {
+    "id" : "2da40894-09d9-411c-ad8e-5ff8023484b9",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
     "components" : [ {
       "componentAttributes" : {
-        "bannerText" : "",
-        "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
-        "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
-        "pageType" : "",
-        "showSubTopics" : true,
-        "title" : "Thanks for your request!",
-        "uniqueNameOrId" : ""
+        "richTextValue" : "<p style=\"text-align: center;\"><span style=\"font-family: verdana; font-size: 36px;\">Thanks for your request!</span></p><p style=\"text-align: center;\"><a href=\"https://sejlsfors3-dev-ed.my.site.com/\" rel=\"noopener noreferrer\" target=\"_self\" style=\"font-size: 20px;\">Back to home site</a></p>"
       },
-      "componentName" : "forceCommunity:headline",
-      "id" : "ed903eb5-d08f-4fc5-81cc-a3c35c305f10",
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "92b2439e-b621-4234-abdc-938c39a33dbe",
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "2dd27922-0a0a-4958-8ccd-159077b6ed13",
-    "regionName" : "header",
-    "type" : "region"
-  }, {
-    "id" : "7270f2f7-e3bf-4250-a708-1c17ff43f085",
+    "id" : "ec502930-3609-4bd3-bc22-d7fb2dd35a95",
     "regionName" : "content",
     "type" : "region"
   }, {
-    "id" : "0aecac11-c693-4974-bc38-3aea6a17a3b4",
+    "id" : "6f9620fe-fa05-450f-8bee-5d5ce11e2003",
     "regionName" : "footer",
     "type" : "region"
   }, {
@@ -36,18 +30,18 @@
       "componentAttributes" : {
         "customHeadTags" : "",
         "description" : "",
-        "title" : "Thanks for your request!"
+        "title" : "Thanks for your request"
       },
       "componentName" : "forceCommunity:seoAssistant",
-      "id" : "2f824bc7-4b37-4fcb-a748-2f2a495499ce",
+      "id" : "d99115e0-9815-4f7c-a716-543f4721d8f1",
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "80516e60-3e86-40b5-bc86-19476a78c2d9",
+    "id" : "f86301e0-2b14-43bc-b6f1-01c792cbb040",
     "regionName" : "sfdcHiddenRegion",
     "type" : "region"
   } ],
   "themeLayoutType" : "Inner",
   "type" : "view",
-  "viewType" : "custom-case-request-thanks"
+  "viewType" : "custom-thanks-case-request"
 }

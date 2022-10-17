@@ -4,6 +4,7 @@
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>Sales Console</label>
     <navType>Console</navType>
     <tabs>standard-home</tabs>
@@ -27,10 +28,10 @@
     <utilityBar>LightningSalesConsole_UtilityBar</utilityBar>
     <workspaceConfig>
         <mappings>
-            <tab>Order__c</tab>
+            <tab>Category__c</tab>
         </mappings>
         <mappings>
-            <tab>Category__c</tab>
+            <tab>Order__c</tab>
         </mappings>
         <mappings>
             <tab>ProductCategory__c</tab>

@@ -123,8 +123,8 @@
         }, {
           "components" : [ {
             "componentAttributes" : {
-              "navAlignment" : "left",
-              "navItemThreshold" : 4,
+              "navAlignment" : "center",
+              "navItemThreshold" : 6,
               "navigationMenuEditorRefresh" : "MyCustomMenu"
             },
             "componentName" : "forceCommunity:themeNav",
@@ -343,7 +343,7 @@
           "components" : [ {
             "componentAttributes" : {
               "NavigationMenuEditorRefresh" : "MyCustomMenu",
-              "alignment" : "left",
+              "alignment" : "center",
               "showAppLauncher" : false,
               "showBackLabel" : false,
               "showHomeLink" : true

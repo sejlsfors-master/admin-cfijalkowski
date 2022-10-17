@@ -19,6 +19,7 @@
     <tabs>standard-Case</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-Contact</tabs>
+    <tabs>Cart__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Shop_Online_UtilityBar</utilityBar>
 </CustomApplication>

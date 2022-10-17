@@ -11,7 +11,7 @@
         <chartType>Funnel</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>false</expandOthers>
-        <groupingColumn>FK_NAME</groupingColumn>
+        <groupingColumn>Account$Name</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
         <showAxisLabels>true</showAxisLabels>
@@ -22,30 +22,32 @@
         <summaryAxisRange>Auto</summaryAxisRange>
         <textColor>#000000</textColor>
         <textSize>12</textSize>
+        <title>Orders</title>
         <titleColor>#000000</titleColor>
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>CUST_NAME</field>
+        <field>Account.Orders__r$Name</field>
     </columns>
+    <description>Shows chart on Account pages</description>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>FK_NAME</field>
+        <field>Account$Name</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>New Orders</name>
+    <name>Orders with Accounts Report</name>
     <params>
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>CustomEntity$Order__c@Order__c.BillingAccount__c</reportType>
-    <scope>user</scope>
+    <reportType>New_Orders_with_Accounts__c</reportType>
+    <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <dateColumn>Account$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

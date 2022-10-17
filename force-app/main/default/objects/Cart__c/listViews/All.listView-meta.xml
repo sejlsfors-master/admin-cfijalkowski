@@ -4,6 +4,7 @@
     <columns>NAME</columns>
     <columns>Status__c</columns>
     <columns>OWNER.ALIAS</columns>
+    <columns>User__c</columns>
     <filterScope>Everything</filterScope>
     <label>All</label>
 </ListView>

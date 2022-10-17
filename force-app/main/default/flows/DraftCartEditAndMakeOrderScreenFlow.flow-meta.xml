@@ -560,7 +560,7 @@
         <locationX>578</locationX>
         <locationY>2510</locationY>
         <connector>
-            <targetReference>OrderedSuccessfully</targetReference>
+            <targetReference>StatusOnConvertedDraftCart</targetReference>
         </connector>
         <inputReference>OrderLineItemsData</inputReference>
     </recordCreates>
@@ -678,10 +678,10 @@
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>Email</field>
+            <field>Id</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>$User.Email</elementReference>
+                <elementReference>$User.ContactId</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
@@ -980,11 +980,10 @@
             <targetReference>AssignOrderData</targetReference>
         </connector>
         <fields>
-            <name>BillingCompanyData</name>
-            <fieldText>Billing Company Data</fieldText>
+            <name>OrderSummary_Section1</name>
             <fieldType>RegionContainer</fieldType>
             <fields>
-                <name>BillingCompanyData_Column1</name>
+                <name>OrderSummary_Section1_Column1</name>
                 <fieldType>Region</fieldType>
                 <fields>
                     <name>CompanyNameLabel</name>
@@ -1005,7 +1004,7 @@
                 <isRequired>false</isRequired>
             </fields>
             <fields>
-                <name>BillingCompanyData_Column2</name>
+                <name>OrderSummary_Section1_Column2</name>
                 <fieldType>Region</fieldType>
                 <fields>
                     <name>CompanyNameValue</name>
@@ -1028,11 +1027,10 @@
             <isRequired>false</isRequired>
         </fields>
         <fields>
-            <name>BillingAddressLabel</name>
-            <fieldText>Billing Address</fieldText>
+            <name>OrderSummary_Section2</name>
             <fieldType>RegionContainer</fieldType>
             <fields>
-                <name>BillingAddressLabel_Column1</name>
+                <name>OrderSummary_Section2_Column1</name>
                 <fieldType>Region</fieldType>
                 <fields>
                     <name>BillingCountryLabel</name>
@@ -1068,7 +1066,7 @@
                 <isRequired>false</isRequired>
             </fields>
             <fields>
-                <name>BillingAddressLabel_Column2</name>
+                <name>OrderSummary_Section2_Column2</name>
                 <fieldType>Region</fieldType>
                 <fields>
                     <name>BillingCountry</name>
@@ -1106,11 +1104,10 @@
             <isRequired>false</isRequired>
         </fields>
         <fields>
-            <name>ContactPersonData</name>
-            <fieldText>Contact Person Data</fieldText>
+            <name>OrderSummary_Section3</name>
             <fieldType>RegionContainer</fieldType>
             <fields>
-                <name>ContactPersonData_Column1</name>
+                <name>OrderSummary_Section3_Column1</name>
                 <fieldType>Region</fieldType>
                 <fields>
                     <name>ContactPersonLabel</name>
@@ -1136,7 +1133,7 @@
                 <isRequired>false</isRequired>
             </fields>
             <fields>
-                <name>ContactPersonData_Column2</name>
+                <name>OrderSummary_Section3_Column2</name>
                 <fieldType>Region</fieldType>
                 <fields>
                     <name>ContactPerson</name>
@@ -1164,11 +1161,10 @@
             <isRequired>false</isRequired>
         </fields>
         <fields>
-            <name>ShippingAddressLabel</name>
-            <fieldText>Shipping Address</fieldText>
+            <name>OrderSummary_Section4</name>
             <fieldType>RegionContainer</fieldType>
             <fields>
-                <name>ShippingAddressLabel_Column1</name>
+                <name>OrderSummary_Section4_Column1</name>
                 <fieldType>Region</fieldType>
                 <fields>
                     <name>ShippingCountryLabel</name>
@@ -1204,7 +1200,7 @@
                 <isRequired>false</isRequired>
             </fields>
             <fields>
-                <name>ShippingAddressLabel_Column2</name>
+                <name>OrderSummary_Section4_Column2</name>
                 <fieldType>Region</fieldType>
                 <fields>
                     <name>ShippingCountry</name>
