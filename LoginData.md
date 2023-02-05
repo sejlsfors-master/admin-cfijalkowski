@@ -9,5 +9,5 @@ https://github.com/letsjoincloud/admin-cfijalkowski
 https://sejlsfors3-dev-ed.develop.my.site.com/s/login/
 
 Log in as one of the following customers:
-1. **John Wood**   - login: john@jandj-carpenter.com    | password: mySuperSecretPa$$W0rd
-2. **Johanna Wood** - login: johanna@jandj-carpenter.com | password: mySuperSecretPa$$W0rd
+1. **John Wood**   - login: john@jandj-carpenter.com    | password: my$uper$ecretPa$$W0rd
+2. **Johanna Wood** - login: johanna@jandj-carpenter.com | password: my$uper$ecretPa$$W0rd
